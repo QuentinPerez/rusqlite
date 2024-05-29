@@ -628,9 +628,7 @@ mod bindings {
             bindings = bindings
                 .blocklist_function("sqlite3_vmprintf")
                 .blocklist_function("sqlite3_vsnprintf")
-                .blocklist_function("sqlite3_str_vappendf")
-                .blocklist_type("va_list")
-                .blocklist_item("__.*");
+                .blocklist_function("sqlite3_str_vappendf");
         }
 
         let bindings = bindings
